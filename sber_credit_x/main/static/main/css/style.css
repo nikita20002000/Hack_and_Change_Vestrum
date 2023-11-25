@@ -53,7 +53,7 @@
   width: 1276px;
   height: 820px;
   top: 90px;
-  left: 90px;
+  left: 17px;
 }
 
 .dashboard .left-area {
@@ -435,7 +435,7 @@
 .dashboard .image-2 {
   position: relative;
   border-radius: 25px;
-  background-image: url(./img/image-7.png);
+  background-image: url(../img/image-7.png);
   background-size: cover;
   background-position: 50% 50%;
   width: 44px;
@@ -689,14 +689,14 @@
   position: relative;
   flex: 1;
   align-self: stretch;
-  width: 100%;
+  width: 300px;
   flex-grow: 1;
 }
 
 .dashboard .progress-deal {
   position: relative;
   align-self: stretch;
-  width: 100%;
+  width: 315px;
   height: 86px;
   background-color: var(--primarywhite);
 }
@@ -714,7 +714,7 @@
   position: relative;
   border-radius: 25px;
   overflow: hidden;
-  background-image: url(./img/image-2.svg);
+  background-image: url(../img/image-2.svg);
   background-size: cover;
   background-position: 50% 50%;
   width: 44px;
@@ -1014,7 +1014,7 @@
 }
 
 .dashboard .avatar {
-  background-image: url(./img/avatar-4.png);
+  background-image: url(../img/avatar-4.png);
   position: relative;
   width: 44px;
   height: 44px;
@@ -1088,7 +1088,7 @@
   height: 20px;
   top: 15px;
   left: 15px;
-  background-image: url(./img/icon-3.svg);
+  background-image: url(../img/icon-3.svg);
   background-size: 100% 100%;
 }
 
@@ -1209,7 +1209,7 @@
   border-radius: 100px;
   border: 1px solid;
   border-color: var(--greygrey-30);
-  background-image: url(./img/avatar.png);
+  background-image: url(../img/avatar.png);
   background-size: cover;
   background-position: 50% 50%;
 }

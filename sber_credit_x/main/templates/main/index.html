@@ -1,9 +1,13 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="{% static 'main/css/globals.css' %}" />
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'main/css/styleguide.css' %}" />
   </head>
   <body>
     <div class="dashboard">
@@ -137,7 +141,7 @@
                       <div class="overlap-2">
                         <div class="overlap-group-2">
                           <div class="text-wrapper-8">Заявок на очереди</div>
-                          <div class="icon"><img class="img" src="img/vuesax-bold-profile-2user.svg" /></div>
+                          <div class="icon"><img class="img" src="{% static 'main/img/vuesax-bold-profile-2user.svg' %}" /></div>
                         </div>
                         <div class="customers-count">1488</div>
                       </div>
@@ -147,7 +151,7 @@
                     <div class="dashboard-deals">
                       <div class="text-wrapper-9">Заявок рассмотрено</div>
                       <div class="deals-count">228</div>
-                      <div class="vuesax-bold-wrapper"><img class="img" src="img/vuesax-bold-briefcase.svg" /></div>
+                      <div class="vuesax-bold-wrapper"><img class="img" src="{% static 'main/img/vuesax-bold-briefcase.svg' %}" /></div>
                     </div>
                   </div>
                 </div>
@@ -155,7 +159,7 @@
                   <div class="deal-2">
                     <div class="progress-deal">
                       <div class="detail-2">
-                        <div class="image-wrapper"><img class="image-3" src="img/image.png" /></div>
+                        <div class="image-wrapper"><img class="image-3" src="{% static 'main/img/image.png' %}" /></div>
                         <div class="customer-address">
                           <div class="text-wrapper-10">Коржик Сезамов</div>
                           <div class="line-2">
@@ -166,7 +170,7 @@
                       </div>
                       <div class="progress"><div class="progress-2">ОЖИДАЕТ</div></div>
                       <div class="base-2"></div>
-                      <div class="icon-wrapper"><img class="icon-2" src="img/icon-12.svg" /></div>
+                      <div class="icon-wrapper"><img class="icon-2" src="{% static 'main/img/icon-12.svg' %}" /></div>
                     </div>
                     <div class="activity-field">
                       <div class="overlap-group-3">
@@ -217,7 +221,7 @@
                           <p class="email">Заявка на кредит от 22.10.23</p>
                         </div>
                       </div>
-                      <div class="edit"><img class="icon-2" src="img/icon-9.svg" /></div>
+                      <div class="edit"><img class="icon-2" src="{% static 'main/img/icon-9.svg' %}" /></div>
                     </div>
                     <div class="customer">
                       <div class="customer-2">
@@ -230,7 +234,7 @@
                           <p class="email">Заявка на кредит от 22.10.23</p>
                         </div>
                       </div>
-                      <div class="edit"><img class="icon-2" src="img/icon-9.svg" /></div>
+                      <div class="edit"><img class="icon-2" src="{% static 'main/img/icon-9.svg' %}"  /></div>
                     </div>
                     <div class="customer">
                       <div class="customer-2">
@@ -243,7 +247,7 @@
                           <p class="email">Заявка на кредит от 22.10.23</p>
                         </div>
                       </div>
-                      <div class="edit"><img class="icon-2" src="img/icon-9.svg" /></div>
+                      <div class="edit"><img class="icon-2" src="{% static 'main/img/icon-9.svg' %}" /></div>
                     </div>
                   </div>
                 </div>
@@ -253,15 +257,15 @@
         </div>
         <div class="sidebar-navigation">
           <div class="menu">
-            <div class="img-wrapper"><img class="icon-2" src="img/icon-8.svg" /></div>
-            <div class="button-3"><img class="icon-2" src="img/icon-7.svg" /></div>
-            <div class="button-3"><img class="icon-2" src="img/icon-6.svg" /></div>
-            <div class="button-3"><img class="icon-2" src="img/icon-5.svg" /></div>
-            <div class="button-3"><img class="icon-2" src="img/icon-4.svg" /></div>
+            <div class="img-wrapper"><img class="icon-2" src="{% static 'main/img/icon-8.svg' %}" /></div>
+            <div class="button-3"><img class="icon-2" src="{% static 'main/img/icon-7.svg' %}" /></div>
+            <div class="button-3"><img class="icon-2" src="{% static 'main/img/icon-6.svg' %}" /></div>
+            <div class="button-3"><img class="icon-2" src="{% static 'main/img/icon-5.svg' %}" /></div>
+            <div class="button-3"><img class="icon-2" src="{% static 'main/img/icon-4.svg' %}" /></div>
             <div class="button-3">
               <div class="badge-wrapper"><div class="badge-2"></div></div>
             </div>
-            <div class="button-3"><img class="icon-2" src="img/icon-2.svg" /></div>
+            <div class="button-3"><img class="icon-2" src="{% static 'main/img/icon-2.svg' %}" /></div>
           </div>
           <div class="base-4"></div>
         </div>
@@ -269,13 +273,13 @@
           <div class="overlap-3">
             <div class="left-bar"><div class="text-wrapper-13">Дашборд</div></div>
             <div class="right-bar">
-              <div class="button-4"><img class="icon-2" src="img/icon-1.svg" /></div>
+              <div class="button-4"><img class="icon-2" src="{% static 'main/img/icon-1.svg' %}" /></div>
               <div class="add-new"><button class="button-5">Позвать Салют</button></div>
               <div class="user"></div>
             </div>
             <div class="logo">
               <div class="overlap-3">
-                <div class="logo-2"><img class="image-4" src="img/image-1.png" /></div>
+                <div class="logo-2"><img class="image-4" src="{% static 'main/img/icon-1.svg' %}" /></div>
                 <div class="overlap-group-4">
                   <div class="base-5"></div>
                   <div class="base-6"></div>
