@@ -671,7 +671,7 @@
 .dashboard .dashboard-deal {
   display: flex;
   flex-direction: column;
-  width: 947px;
+  width: 520px;
   height: 360px;
   align-items: flex-start;
   position: relative;
@@ -768,7 +768,7 @@
   padding: 10px 20px;
   position: absolute;
   top: 23px;
-  left: 770px;
+  left: 330px;
   background-color: var(--primaryblue-light);
   border-radius: 100px;
 }
@@ -800,7 +800,7 @@
   width: 50px;
   height: 50px;
   top: 18px;
-  left: 873px;
+  left: 440px;
   border-radius: 50px;
   overflow: hidden;
 }
@@ -925,7 +925,7 @@
 .dashboard .load-more {
   position: relative;
   align-self: stretch;
-  width: 100%;
+  width: 50%;
   height: 46px;
   background-color: var(--primarywhite);
 }
@@ -933,7 +933,7 @@
 .dashboard .text-wrapper-11 {
   position: absolute;
   top: 7px;
-  left: 414px;
+  left: 378px;
   font-family: var(--body-bold-font-family);
   font-weight: var(--body-bold-font-weight);
   color: #4ba35b;
