@@ -1218,7 +1218,7 @@
   height: 20px;
   top: 15px;
   left: 15px;
-  background-image: url(./img/icon-15.svg);
+  background-image: url(../img/avatar.png);
   background-size: 100% 100%;
 }
 
@@ -1319,7 +1319,7 @@
   border-radius: 100px;
   border: 1px solid;
   border-color: var(--greygrey-30);
-  background-image: url(./img/avatar.png);
+  background-image: url(../img/avatar.png);
   background-size: cover;
   background-position: 50% 50%;
 }
