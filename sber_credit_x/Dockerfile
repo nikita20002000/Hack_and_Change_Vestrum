@@ -10,4 +10,4 @@ ENV APP_NAME=SBER_CREDIT_X
 
 RUN pip install -r requirements.txt
 
-CMD gunicorn sber_credit_x.wsgi:aplication -b 0.0.0.0:8000
+CMD gunicorn sber_credit_x.wsgi:application -b 0.0.0.0:8000

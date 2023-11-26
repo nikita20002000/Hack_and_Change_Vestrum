@@ -21,17 +21,17 @@
                 </div>
                 <div class="sort-by">
                   <div class="text-wrapper-2">Сортировка: дата заявки</div>
-                  <img class="vuesax-outline-arrow" src="img/vuesax-outline-arrow-down.svg" />
+                  <img class="vuesax-outline-arrow" src="{% static 'main/img/vuesax-outline-arrow-down.svg' %}" />
                 </div>
                 <div class="filter">
                   <div class="text-wrapper-3">Фильтр</div>
-                  <img class="vuesax-outline" src="img/vuesax-outline-filter-add.svg" />
+                  <img class="vuesax-outline" src="{% static 'main/img/vuesax-outline-filter-add.svg' %}"/>
                 </div>
               </div>
               <div class="deal-list">
                 <div class="table-header">
                   <div class="columns">
-                    <div class="icon"><img class="vuesax-bold-image" src="img/vuesax-bold-image.svg" /></div>
+                    <div class="icon"><img class="vuesax-bold-image" src="{% static 'main/img/vuesax-bold-image.svg' %}" /></div>
                     <div class="div-wrapper"><div class="address">ФИО Клиента</div></div>
                     <div class="date-column"><div class="text-wrapper-4">Сумма заявки</div></div>
                     <div class="price-column"><div class="text-wrapper-4">Дата заявки</div></div>
@@ -40,10 +40,12 @@
                   </div>
                   <div class="border"></div>
                 </div>
-                <img class="deal-row-repeat-link" src="img/deal-row-repeat-link.svg" />
+                <a href="{% url 'space_for_worker1' %}">
+                  <img class="deal-row-repeat-link" src="{% static 'main/img/deal-row-repeat-link.svg' %}" />
+                </a>
                 <div class="deal-row-ignore">
                   <div class="cells">
-                    <div class="image"><img class="img" src="img/image-6.png" /></div>
+                    <div class="image"><img class="img" src="{% static 'main/img/image-6.png' %}" /></div>
                     <div class="div-wrapper">
                       <div class="address-concat"><div class="text-wrapper-6">Раскольников Родион Романович</div></div>
                     </div>
@@ -54,14 +56,14 @@
                     <div class="date-cell"><div class="appointment-date">15 Ноя, 2023 14:53</div></div>
                     <div class="progress"><div class="progress-2">В ОЧЕРЕДИ</div></div>
                     <div class="edit-cell">
-                      <img class="vuesax-outline-edit" src="img/vuesax-outline-edit-2-7.svg" />
+                      <img class="vuesax-outline-edit" src="{% static 'main/img/vuesax-outline-edit-2-7.svg' %}" />
                     </div>
                   </div>
                   <div class="border-2"></div>
                 </div>
                 <div class="deal-row-ignore">
                   <div class="cells-2">
-                    <div class="image"><img class="img" src="img/image-5.png" /></div>
+                    <div class="image"><img class="img" src="{% static 'main/img/image-5.png' %}" /></div>
                     <div class="div-wrapper">
                       <div class="address-concat"><div class="text-wrapper-6">Шерер Анна Павловна</div></div>
                     </div>
@@ -71,14 +73,14 @@
                     <div class="date-cell"><div class="appointment-date">13 Ноя, 2023 12:11</div></div>
                     <div class="progress"><div class="progress-3">ОТКАЗАНО</div></div>
                     <div class="edit-cell">
-                      <img class="vuesax-outline-edit" src="img/vuesax-outline-edit-2-2.svg" />
+                      <img class="vuesax-outline-edit" src="{% static 'main/img/vuesax-outline-edit-2-2.svg' %}" />
                     </div>
                   </div>
                   <div class="border-2"></div>
                 </div>
                 <div class="deal-row-ignore-2">
                   <div class="cells-3">
-                    <div class="image"><img class="img" src="img/image-2.png" /></div>
+                    <div class="image"><img class="img" src="{% static 'main/img/image-2.png' %}" /></div>
                     <div class="div-wrapper">
                       <div class="address-concat"><div class="text-wrapper-6">Безухов Петр Кириллович</div></div>
                     </div>
@@ -89,14 +91,14 @@
                     <div class="date-cell"><div class="appointment-date">11 Ноя, 2023 14:53</div></div>
                     <div class="progress"><div class="progress-4">ОДОБРЕНО</div></div>
                     <div class="edit-cell">
-                      <img class="vuesax-outline-edit" src="img/vuesax-outline-edit-2-2.svg" />
+                      <img class="vuesax-outline-edit" src="{% static 'main/img/vuesax-outline-edit-2-2.svg' %}" />
                     </div>
                   </div>
                   <div class="border-2"></div>
                 </div>
                 <div class="deal-row-ignore-3">
                   <div class="cells-3">
-                    <div class="image"><img class="img" src="img/image.png" /></div>
+                    <div class="image"><img class="img" src="{% static 'main/img/image.png' %}" /></div>
                     <div class="div-wrapper">
                       <div class="address-concat"><div class="text-wrapper-6">Авакян Михаил Ашотович</div></div>
                     </div>
@@ -107,14 +109,14 @@
                     <div class="date-cell"><div class="appointment-date">10 Ноя, 2023 14:53</div></div>
                     <div class="progress-wrapper"><div class="progress-5">ОТКАЗАНО</div></div>
                     <div class="edit-cell">
-                      <img class="vuesax-outline-edit" src="img/vuesax-outline-edit-2-2.svg" />
+                      <img class="vuesax-outline-edit" src="{% static 'main/img/vuesax-outline-edit-2-2.svg' %}" />
                     </div>
                   </div>
                   <div class="border-2"></div>
                 </div>
                 <div class="deal-row-ignore">
                   <div class="cells-4">
-                    <div class="image"><img class="img" src="img/image-2.png" /></div>
+                    <div class="image"><img class="img" src="{% static 'main/img/image-2.png' %}" /></div>
                     <div class="div-wrapper">
                       <div class="address-concat"><div class="text-wrapper-6">Сидоров Семен Петрович</div></div>
                     </div>
@@ -124,13 +126,13 @@
                     </div>
                     <div class="date-cell"><div class="appointment-date">9 Ноя, 2023 14:53</div></div>
                     <div class="progress"><div class="progress-4">ОДОБРЕНО</div></div>
-                    <div class="edit-cell"><img class="vuesax-outline-edit" src="img/vuesax-outline-edit-2.svg" /></div>
+                    <div class="edit-cell"><img class="vuesax-outline-edit" src="{% static 'main/img/vuesax-outline-edit-2.svg' %}" /></div>
                   </div>
                   <div class="border-2"></div>
                 </div>
                 <div class="deal-row-ignore">
                   <div class="cells-5">
-                    <div class="image"><img class="img" src="img/image.png" /></div>
+                    <div class="image"><img class="img" src="{% static 'main/img/image.png' %}" /></div>
                     <div class="div-wrapper">
                       <div class="address-concat"><div class="text-wrapper-6">Гугкаев Аслан Валерьевич</div></div>
                     </div>
@@ -140,7 +142,7 @@
                     </div>
                     <div class="date-cell"><div class="appointment-date">7 Ноя, 2023 14:53</div></div>
                     <div class="progress"><div class="progress-6">ОТКАЗАНО</div></div>
-                    <div class="edit-cell"><img class="vuesax-outline-edit" src="img/vuesax-outline-edit-2.svg" /></div>
+                    <div class="edit-cell"><img class="vuesax-outline-edit" src="{% static 'main/img/vuesax-outline-edit-2.svg' %}" /></div>
                   </div>
                   <div class="border-2"></div>
                 </div>
@@ -154,15 +156,17 @@
         <div class="sidebar-navigation">
           <div class="base-2"></div>
           <div class="menu">
-            <div class="button-3"><img class="img-2" src="img/icon-7.svg" /></div>
-            <div class="icon-wrapper"><img class="img-2" src="img/icon-6.svg" /></div>
-            <div class="button-3"><img class="img-2" src="img/vuesax-outline-profile-2user.svg" /></div>
-            <div class="button-3"><img class="img-2" src="img/icon-5.svg" /></div>
-            <div class="button-3"><img class="img-2" src="img/icon-4.svg" /></div>
+            <a href="{% url 'home' %}">
+              <div class="button-3"><img class="img-2" src="{% static 'main/img/icon-7.svg' %}" /></div>
+            </a>
+            <div class="icon-wrapper"><img class="img-2" src="{% static 'main/img/icon-6.svg' %}" /></div>
+            <div class="button-3"><img class="img-2" src="{% static 'main/img/vuesax-outline-profile-2user.svg' %}" /></div>
+            <div class="button-3"><img class="img-2" src="{% static 'main/img/icon-5.svg' %}" /></div>
+            <div class="button-3"><img class="img-2" src="{% static 'main/img/icon-4.svg' %}" /></div>
             <div class="button-3">
               <div class="overlap-group"><div class="badge"></div></div>
             </div>
-            <div class="button-3"><img class="img-2" src="img/icon-2.svg" /></div>
+            <div class="button-3"><img class="img-2" src="{% static 'main/img/icon-2.svg' %}" /></div>
           </div>
         </div>
         <div class="navigation-bar">
@@ -170,11 +174,11 @@
             <div class="overlap-3">
               <div class="left-bar"><div class="text-wrapper-7">Заявки</div></div>
               <div class="right-bar">
-                <div class="img-wrapper"><img class="img-2" src="img/icon-1.svg" /></div>
+                <div class="img-wrapper"><img class="img-2" src="{% static 'main/img/icon-1.svg' %}" /></div>
                 <div class="group">
                   <div class="overlap-group-2">
                     <div class="add-new"><button class="button-4">Помощник Салют</button></div>
-                    <img class="element" src="img/97004635-0888a900-1546-11eb-8f25-283a0693608e-1.png" />
+                    <img class="element" src="{% static 'main/img/97004635-0888a900-1546-11eb-8f25-283a0693608e-1.png' %}" />
                   </div>
                 </div>
                 <div class="user"></div>
@@ -183,7 +187,7 @@
             </div>
             <div class="logo">
               <div class="overlap-4">
-                <div class="image-wrapper"><img class="image-2" src="img/image-1.png" /></div>
+                <div class="image-wrapper"><img class="image-2" src="{% static 'main/img/image-1.png' %}" /></div>
                 <div class="overlap-5">
                   <div class="base-4"></div>
                   <div class="base-5"></div>
