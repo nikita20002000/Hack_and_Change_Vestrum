@@ -1,13 +1,18 @@
+# Используйте официальный образ Python как базовый
 FROM python:3.11-slim
 
-RUN mkdir code
-WORKDIR code
+# Создание рабочей директории
+WORKDIR /code
 
-ADD . /code/
-ADD .env.docker /code/.env
+# Копирование файлов проекта и файла окружения
+COPY main /code/
+COPY .env.docker /code/.env
 
-ENV APP_NAME=SBER_CREDIT_X
+# Установка зависимостей
+RUN pip install --no-cache-dir -r requirements.txt
 
-RUN pip install -r requirements.txt
+# Сбор статических файлов
+RUN python manage.py collectstatic --noinput
 
-CMD gunicorn sber_credit_x.wsgi:application -b 0.0.0.0:8000
+# Команда для запуска сервера с Gunicorn
+CMD ["gunicorn", "sber_credit_x.wsgi:application", "-b", "0.0.0.0:8000"]
