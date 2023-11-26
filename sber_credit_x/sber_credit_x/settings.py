@@ -14,7 +14,7 @@ from pathlib import Path
 import environ
 
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 env = environ.Env()
 environ.Env.read_env(env_file=os.path.join(BASE_DIR, '.env'))
@@ -28,7 +28,7 @@ SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 ALLOWED_HOSTS = []
 
 
@@ -82,7 +82,8 @@ WSGI_APPLICATION = 'sber_credit_x.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
     }
 }
 
@@ -129,5 +130,6 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    os.path.join(BASE_DIR, "static"),
+
 ]
